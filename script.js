@@ -35,8 +35,9 @@ function btnClick() {
   let inNumber = askInput();
 
   let targetUl = document.getElementById("targetUl");
-
-  let liTmp = " <li style=''> test </li> ";
+  targetUl.innerHTML = "";
+  liColorList = [];
+  //   let liTmp = " <li style=''> test </li> ";
 
   for (let i = 0; i < inNumber; i++) {
     liTmp = getNewLiStr(i + 1);
@@ -44,7 +45,6 @@ function btnClick() {
   }
 
   //   targetUl.innerHTML = " <li> test </li> <li> test </li> ";
-
   //   console.log("get number : ", inNumber);
 }
 
